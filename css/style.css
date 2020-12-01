@@ -1448,16 +1448,24 @@ a {
 }
 @media screen and (max-width: 1030px) {
   .nav2 {
+    visibility: hidden;
     z-index: 2;
     position: absolute;
-    top: 100000rem;
-    left: 0;
+    top: -323px;
+    bottom: 100%;
+    left: calc(100% - 200px);
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 200px;
+    height: 300px;
     margin: 0;
     background-color: #d1d0d0;
+    padding-top: 20px;
     opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .nav2 a {
+    padding-left: 70px;
   }
   .nav2 .active {
     color: #1a54e7;
@@ -1468,13 +1476,12 @@ a {
   .hamburger {
     margin-left: auto;
     display: inline-block;
-    z-index: 3;
   }
   .hamburger.is-active ~ .nav2 {
+    visibility: visible;
     opacity: 1;
+    bottom: 0;
     top: 100%;
-    padding: 50px;
-    left: calc(100% - 200px);
   }
 
   .blocks {
