@@ -6,6 +6,7 @@
     background-color: rgba(0, 0, 0, .6)
     top: 0
     left: 0
+    transition: .5s linear
 
     .popap__area
         position: absolute
@@ -36,11 +37,7 @@
                 top: 10px
                 font-size: 30px
                 color: #000000
-
-                &.close ~~ .popap__content
-                    color: #123121
-
-                    
+                  
 
             .img__popap 
                 bottom: 70%
@@ -67,3 +64,6 @@
                 background-color: #eb304d
                 border-radius: 5px
                 color: #ffffff
+
+.fadeOut
+    opacity: 0

@@ -27,10 +27,15 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
 });
 
+let popup = document.querySelector('#popap');
 //popap
 var popap__close = document.querySelector(".popap__close");
 popap__close.addEventListener("click", function() {
-  popap__close.classList.toggle("close");
+  
+  popup.style.opacity = 0;
+  setTimeout(() => {
+    popup.remove();
+  }, 500)
 });
 
 

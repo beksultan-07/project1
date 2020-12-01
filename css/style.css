@@ -1497,6 +1497,7 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
+  transition: 0.5s linear;
 }
 .popap .popap__area {
   position: absolute;
@@ -1528,9 +1529,6 @@ a {
   font-size: 30px;
   color: #000000;
 }
-.popap .popap__body .popap__content .popap__close.close ~ ~ .popap__content {
-  color: #123121;
-}
 .popap .popap__body .popap__content .img__popap {
   bottom: 70%;
   left: 35%;
@@ -1557,6 +1555,10 @@ a {
   background-color: #eb304d;
   border-radius: 5px;
   color: #ffffff;
+}
+
+.fadeOut {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
