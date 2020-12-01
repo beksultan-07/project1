@@ -27,4 +27,10 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
 });
 
+//popap
+var popap__close = document.querySelector(".popap__close");
+popap__close.addEventListener("click", function() {
+  popap__close.classList.toggle("close");
+});
+
 
