@@ -1,0 +1,89 @@
+@media screen and ( max-width: 959px )
+    .slideText
+        top: 15%
+
+        &-title  
+            max-width: rem(700)
+            font-size: rem(33)
+    
+@media screen and ( max-width: 840px )
+    .blocks2
+        .blk2-title
+            font-size: rem(38)
+
+        .block-info
+            flex-direction: column
+
+    .slideText
+        &-title
+            font-size: rem(28)
+        img
+            width: 90px
+
+    .slideText__bottom
+        display: none
+
+@media screen and ( max-width: 443px )
+    .sign-in
+        max-width: rem(300)
+
+        .signInCont
+            margin-left: 170px
+
+            &.active
+                margin-left: -170px
+    
+@media screen and ( max-width: 500px )
+
+    .slideText
+        &-title
+            font-size: rem(20)
+        img
+            width: 70px
+    
+
+@media screen and ( max-width: 1030px )
+    .nav2
+        z-index: 2
+        position: absolute
+        top: 100000rem
+        left: 0
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin: 0
+        background-color: #d1d0d0
+        opacity: 0
+
+        .active
+            color: #1a54e7
+            border-bottom: none
+            padding-bottom: rem(26)  
+
+    .hamburger
+        margin-left: auto
+        display: inline-block
+        z-index: 3
+
+        &.is-active ~ .nav2
+            opacity: 1
+            top: 100%
+            padding: 50px
+            left: calc(100% - 200px)  
+
+              
+
+    .blocks
+        flex-direction: column
+
+        .margin-left
+            margin-left: 0
+
+    .bllcs_padding
+        padding-right: 30px
+        padding-left: 30px 
+
+
+    
+
+    
