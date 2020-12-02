@@ -25,12 +25,21 @@
     min-width: 70px
     text-align: center
     padding-top: 18px
+    transition: .5s
+
+    &:hover
+        transform: scale(1.2)
     
 .blocks
     display: flex
     justify-content: space-between
 
-    img: 100%
+    img
+        filter: blur(2px)
+        transition: .4s
+
+        &:hover
+            filter: blur(0) 
 
 .block__img
     margin-top: rem(30)
@@ -88,6 +97,8 @@
 
     img
         max-width: 100%
+        filter: blur(2px)
+        transition: .4s
 
 
     .blk_img
@@ -98,6 +109,11 @@
         height: 100%
         display: flex
         flex-wrap: wrap
+        filter: blur(2px)
+        transition: .4s
+        z-index: 1
+        &:hover, img
+            filter: blur(0) 
 
         .blk2__info   
             flex-basis: 100%

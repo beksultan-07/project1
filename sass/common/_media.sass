@@ -1,48 +1,5 @@
-@media screen and ( max-width: 959px )
-    .slideText
-        top: 15%
 
-        &-title  
-            max-width: rem(700)
-            font-size: rem(33)
-    
-@media screen and ( max-width: 840px )
-    .blocks2
-        .blk2-title
-            font-size: rem(38)
-
-        .block-info
-            flex-direction: column
-
-    .slideText
-        &-title
-            font-size: rem(28)
-        img
-            width: 90px
-
-    .slideText__bottom
-        display: none
-
-@media screen and ( max-width: 443px )
-    .sign-in
-        max-width: rem(300)
-
-        .signInCont
-            margin-left: 170px
-
-            &.active
-                margin-left: -170px
-    
-@media screen and ( max-width: 500px )
-
-    .slideText
-        &-title
-            font-size: rem(20)
-        img
-            width: 70px
-    
 @media screen and ( max-width: 1030px )
-
     .nav2
         visibility: hidden
         z-index: 2
@@ -62,6 +19,7 @@
 
         a
             padding-left: 70px 
+            display: block
 
         .active
             color: #1a54e7
@@ -90,6 +48,103 @@
         padding-right: 30px
         padding-left: 30px 
 
+@media screen and ( max-width: 959px )
+
+    .slideText
+        top: 15%
+
+        &-title  
+            max-width: rem(700)
+            font-size: rem(33)
+    
+@media screen and ( max-width: 840px )
+    .blocks2
+        .blk2-title
+            font-size: rem(38)
+
+        .block-info
+            flex-direction: column
+
+    .slideText
+        &-title
+            font-size: rem(28)
+        img
+            width: 90px
+
+    .slideText__bottom
+        display: none
+
+@media screen and ( max-width: 500px )
+    
+    .slideText
+        &-title
+            font-size: rem(20)
+        img
+            width: 70px
+    .img__popap
+        left: 29%
+    .popap-title
+        padding-top: 50px
+
+
+@media screen and ( max-width: 443px )
+    .sign-in
+        max-width: rem(300)
+
+        .signInCont
+            margin-left: 170px
+
+            &.active
+                margin-left: -170px
+    
+@media screen and ( max-width: 610px )
+    .nav_ct
+        position: relative
+
+    .nav1
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
+        display: flex
+        flex-direction: column
+        background-color: #d1d0d0
+        visibility: hidden
+
+        
+        a
+            color: #686868
+            display: block
+
+            &:hover
+                padding-top: 10px 
+                background: #686868
+                color: #d1d0d0
+
+
+
+    .contact-us
+        display: inline-block
+        font-size: rem(16)
+        color: #b2b2b2
+
+        &::after
+            content: "▼"
+
+        &:hover
+            color: #686868
+
+        &:hover ~ .nav1
+            visibility: visible
+            top: 100%
+            
+
+            
+        
+
+            
+
+    
 
     
 

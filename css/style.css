@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -1097,30 +1098,36 @@ a {
   padding-bottom: 1.375rem;
 }
 
+.contact-us {
+  padding: 20px 20px;
+  display: none;
+}
+
 .nav1 {
   margin-left: 0;
 }
-.nav1 .search {
-  padding: 30px 20px;
+
+.search {
+  padding: 20px 20px;
   background: #f6f6f6;
   position: relative;
   transition: all 0.5s;
 }
-.nav1 .search:hover input {
+.search:hover input {
   opacity: 1;
   visibility: visible;
   height: 50px;
   width: 150px;
 }
-.nav1 .search:hover {
+.search:hover {
   background-color: #bdbcbc;
 }
 
 .input {
   z-index: 2;
   position: absolute;
-  top: 90%;
-  left: calc(100% - 69px);
+  top: 100%;
+  left: calc(100% - 65px);
   opacity: 0;
   visibility: hidden;
   height: 0;
@@ -1192,12 +1199,22 @@ a {
   min-width: 70px;
   text-align: center;
   padding-top: 18px;
+  transition: 0.5s;
+}
+.btn:hover {
+  transform: scale(1.2);
 }
 
 .blocks {
   display: flex;
   justify-content: space-between;
-  img: 100%;
+}
+.blocks img {
+  filter: blur(2px);
+  transition: 0.4s;
+}
+.blocks img:hover {
+  filter: blur(0);
 }
 
 .block__img {
@@ -1262,6 +1279,8 @@ a {
 }
 .blocks2 img {
   max-width: 100%;
+  filter: blur(2px);
+  transition: 0.4s;
 }
 .blocks2 .blk_img {
   position: absolute;
@@ -1271,6 +1290,12 @@ a {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  filter: blur(2px);
+  transition: 0.4s;
+  z-index: 1;
+}
+.blocks2 .blk_img:hover, .blocks2 .blk_img img {
+  filter: blur(0);
 }
 .blocks2 .blk_img .blk2__info {
   flex-basis: 100%;
@@ -1398,54 +1423,11 @@ a {
   margin: 0 auto;
   color: #a7acbc;
 }
+.footer__text a {
+  color: #a7acbc;
+  font-weight: bold;
+}
 
-@media screen and (max-width: 959px) {
-  .slideText {
-    top: 15%;
-  }
-  .slideText-title {
-    max-width: 43.75rem;
-    font-size: 2.0625rem;
-  }
-}
-@media screen and (max-width: 840px) {
-  .blocks2 .blk2-title {
-    font-size: 2.375rem;
-  }
-  .blocks2 .block-info {
-    flex-direction: column;
-  }
-
-  .slideText-title {
-    font-size: 1.75rem;
-  }
-  .slideText img {
-    width: 90px;
-  }
-
-  .slideText__bottom {
-    display: none;
-  }
-}
-@media screen and (max-width: 443px) {
-  .sign-in {
-    max-width: 18.75rem;
-  }
-  .sign-in .signInCont {
-    margin-left: 170px;
-  }
-  .sign-in .signInCont.active {
-    margin-left: -170px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .slideText-title {
-    font-size: 1.25rem;
-  }
-  .slideText img {
-    width: 70px;
-  }
-}
 @media screen and (max-width: 1030px) {
   .nav2 {
     visibility: hidden;
@@ -1466,6 +1448,7 @@ a {
   }
   .nav2 a {
     padding-left: 70px;
+    display: block;
   }
   .nav2 .active {
     color: #1a54e7;
@@ -1496,6 +1479,102 @@ a {
     padding-left: 30px;
   }
 }
+@media screen and (max-width: 959px) {
+  .slideText {
+    top: 15%;
+  }
+  .slideText-title {
+    max-width: 43.75rem;
+    font-size: 2.0625rem;
+  }
+}
+@media screen and (max-width: 840px) {
+  .blocks2 .blk2-title {
+    font-size: 2.375rem;
+  }
+  .blocks2 .block-info {
+    flex-direction: column;
+  }
+
+  .slideText-title {
+    font-size: 1.75rem;
+  }
+  .slideText img {
+    width: 90px;
+  }
+
+  .slideText__bottom {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slideText-title {
+    font-size: 1.25rem;
+  }
+  .slideText img {
+    width: 70px;
+  }
+
+  .img__popap {
+    left: 29%;
+  }
+
+  .popap-title {
+    padding-top: 50px;
+  }
+}
+@media screen and (max-width: 443px) {
+  .sign-in {
+    max-width: 18.75rem;
+  }
+  .sign-in .signInCont {
+    margin-left: 170px;
+  }
+  .sign-in .signInCont.active {
+    margin-left: -170px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .nav_ct {
+    position: relative;
+  }
+
+  .nav1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: #d1d0d0;
+    visibility: hidden;
+  }
+  .nav1 a {
+    color: #686868;
+    display: block;
+  }
+  .nav1 a:hover {
+    padding-top: 10px;
+    background: #686868;
+    color: #d1d0d0;
+  }
+
+  .contact-us {
+    display: inline-block;
+    font-size: 1rem;
+    color: #b2b2b2;
+  }
+  .contact-us::after {
+    content: "▼";
+  }
+  .contact-us:hover {
+    color: #686868;
+  }
+  .contact-us:hover ~ .nav1 {
+    visibility: visible;
+    top: 100%;
+  }
+}
 .popap {
   z-index: 4;
   position: fixed;
@@ -1505,6 +1584,7 @@ a {
   top: 0;
   left: 0;
   transition: 0.5s linear;
+  padding-top: 30px;
 }
 .popap .popap__area {
   position: absolute;
@@ -1518,7 +1598,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  padding: 60px 10px;
 }
 .popap .popap__body .popap__content {
   text-align: center;

@@ -1,6 +1,5 @@
 // sliders
 new Swiper('.image-slider', {
-
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
@@ -27,8 +26,8 @@ hamburger.addEventListener("click", function() {
   hamburger.classList.toggle("is-active");
 });
 
-let popup = document.querySelector('#popap');
 //popap
+let popup = document.querySelector('#popap');
 var popap__close = document.querySelector(".popap__close");
 popap__close.addEventListener("click", function() {
   
