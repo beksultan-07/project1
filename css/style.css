@@ -1522,6 +1522,14 @@ a {
   }
 }
 @media screen and (max-width: 447px) {
+  .search {
+    padding: 22px 20px;
+  }
+
+  .input {
+    left: calc(100% - 61px);
+  }
+
   .contact-us {
     width: 72px;
     font-size: 12px;
@@ -1530,7 +1538,7 @@ a {
   .logo {
     width: 148px;
     font-size: 20px;
-    padding: 27px 2px;
+    padding: 22px 2px;
   }
 
   .sign-in {
