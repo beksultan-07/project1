@@ -1541,20 +1541,24 @@ a {
 
   .nav1 {
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 0;
-    z-index: 2;
+    z-index: -1;
     display: flex;
     flex-direction: column;
-    background-color: #d1d0d0;
     visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease;
   }
   .nav1 a {
+    padding-top: 10px;
+    padding-right: 20px;
     color: #686868;
     display: block;
+    background-color: #d1d0d0;
   }
   .nav1 a:hover {
-    padding-top: 10px;
+    padding-bottom: 10px;
     background: #686868;
     color: #d1d0d0;
   }
@@ -1572,7 +1576,9 @@ a {
   }
   .contact-us:hover ~ .nav1 {
     visibility: visible;
-    top: 100%;
+    top: 109%;
+    opacity: 1;
+    z-index: 2;
   }
 }
 .popap {
