@@ -1519,7 +1519,13 @@ a {
     padding-top: 50px;
   }
 }
-@media screen and (max-width: 443px) {
+@media screen and (max-width: 447px) {
+  .logo {
+    background-color: #1a54e7;
+    font-size: 1.25rem;
+    padding: 1.375rem 1.25rem;
+  }
+
   .sign-in {
     max-width: 18.75rem;
   }
@@ -1531,7 +1537,7 @@ a {
   }
 
   .img__popap {
-    left: 25%;
+    margin-left: -45px;
   }
 }
 @media screen and (max-width: 610px) {
@@ -1624,6 +1630,7 @@ a {
 .popap .popap__body .popap__content .img__popap {
   bottom: 70%;
   left: 35%;
+  text-align: center;
   background-color: #fff;
   position: absolute;
   padding: 50px;
