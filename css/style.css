@@ -1515,10 +1515,6 @@ a {
     width: 70px;
   }
 
-  .img__popap {
-    left: 29%;
-  }
-
   .popap-title {
     padding-top: 50px;
   }
@@ -1532,6 +1528,10 @@ a {
   }
   .sign-in .signInCont.active {
     margin-left: -170px;
+  }
+
+  .img__popap {
+    left: 25%;
   }
 }
 @media screen and (max-width: 610px) {
@@ -1551,8 +1551,7 @@ a {
     transition: 0.4s ease;
   }
   .nav1 a {
-    padding-top: 10px;
-    padding-right: 20px;
+    padding: 10px 20px 0;
     color: #686868;
     display: block;
     background-color: #d1d0d0;
