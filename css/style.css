@@ -1101,6 +1101,8 @@ a {
 .contact-us {
   padding: 20px 20px;
   display: none;
+  font-size: 16px;
+  color: #b2b2b2;
 }
 
 .nav1 {
@@ -1520,10 +1522,15 @@ a {
   }
 }
 @media screen and (max-width: 447px) {
+  .contact-us {
+    width: 72px;
+    font-size: 12px;
+  }
+
   .logo {
-    background-color: #1a54e7;
-    font-size: 1.25rem;
-    padding: 1.375rem 1.25rem;
+    width: 148px;
+    font-size: 20px;
+    padding: 27px 2px;
   }
 
   .sign-in {
@@ -1538,6 +1545,10 @@ a {
 
   .img__popap {
     margin-left: -45px;
+  }
+
+  .contact-us:hover ~ .nav1 {
+    margin-top: 8px;
   }
 }
 @media screen and (max-width: 610px) {
@@ -1570,8 +1581,6 @@ a {
 
   .contact-us {
     display: inline-block;
-    font-size: 1rem;
-    color: #b2b2b2;
   }
   .contact-us::after {
     content: "▼";
