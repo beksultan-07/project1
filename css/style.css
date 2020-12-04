@@ -1389,6 +1389,7 @@ a {
   border-radius: 50px;
 }
 .sign-in .signInCont {
+  outline: none;
   padding-top: 10px;
   padding-bottom: 15px;
   font-family: "PTSans bold";
