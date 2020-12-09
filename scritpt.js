@@ -12,6 +12,8 @@ new Swiper('.image-slider', {
     },
 
     autoHeight: true,
+
+    loop: true
   });
 
 // hamburger
