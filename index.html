@@ -329,14 +329,44 @@
           Donec elementum dui semper, pretium dui quis, pretium nisl.
         </p>
         <div class="sign-in">
+
+          <input type="e-mail" id="username" class="sign-field inp1" placeholder="E-mail...">
+          <input type="password" id="password" class="sign-field inp2" placeholder="password">
           <button class="signInCont" id="sign-btn">
-            <span class="signIn">Sign-in</span>
-            <span class="register">Register</span>
+            <span class="signIn sign-button">login</span>
           </button>
         </div>
+
+        <button class="register" id="area">
+          <a href="#popup2" href="">Register</a>
+        </button>
+      </div>
+
+      <div id="popup2" class="popup2">
+
+        <a class="popup2__area" href="#"></a>
+        <div id="login">
+            <div class="flip">
+              <div class="form-signup">
+                <h1>Register</h1>
+                <fieldset>
+                  <p class="login-msg"></p>
+                  <form>
+                    <input type="email" placeholder="email..." required />
+                    <input type="password" placeholder="password..." required />
+                    <input type="text" placeholder="your name" required />
+                    <input type="submit" value="register" />
+                  </form>
+                  <p>sign with:<span class="social fb">Facebook</span> <span class="social gp">Google +</span></p>
+                </fieldset>
+              </div>
+            </div>
+
+        </div>
+
       </div>
     </section>
-
+ 
     <footer class="footer">
       <div class="conteiner">
         <div class="footer__text">
@@ -347,6 +377,7 @@
 
   </div>
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="scritpt.js"></script>
