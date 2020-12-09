@@ -1054,7 +1054,7 @@ a {
 .logo {
   background-color: #1a54e7;
   font-size: 1.5rem;
-  padding: 1.25rem;
+  padding: 1.8rem;
 }
 .logo a {
   color: #ffffff;
@@ -1481,6 +1481,10 @@ a {
   text-decoration: none;
   color: #1a54e7;
   font-weight: 500;
+}
+
+fieldset p {
+  color: #000;
 }
 
 .footer {
